@@ -1,0 +1,42 @@
+$bl-light-blue:   #EEF4F6;
+$bl-purple:       #434350;
+$bl-purple-light: #5F5F70;
+
+$bl-anonymous-pro:  "anonymous-pro", "Source Code Pro", monospace;
+$bl-proxima:        "proxima-nova", "Proxima Nova", sans-serif;
+
+$bl-proxima-light:     300;
+$bl-proxima-regular:   400;
+$bl-proxima-bold:      700;
+$bl-proxima-extrabold: 800;
+
+$bl-anonymous-regular: 400;
+$bl-anonymous-bold:    700;
+
+
+// Base
+body {
+  background-color:  $bl-light-blue;
+  font-family: $bl-proxima;
+}
+
+
+// Header
+.bl-header {
+  background-color: $bl-purple;
+  padding: 15px;
+}
+
+.bl-logo {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: $bl-anonymous-pro;
+  color: lighten($bl-purple, 35%);
+}
+
+// Domains
+.bl-domain-list {
+  background-color: $bl-purple-light;
+}
