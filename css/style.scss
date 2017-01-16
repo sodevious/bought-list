@@ -1,6 +1,7 @@
-$bl-light-blue:   #EEF4F6;
-$bl-purple:       #434350;
-$bl-purple-light: #5F5F70;
+$bl-cream:      #f3eee8;
+$bl-red-wine:   #2C171C;
+$bl-purple:     #4D4250;
+$bl-highlight:  #643C4B;
 
 $bl-anonymous-pro:  "anonymous-pro", "Source Code Pro", monospace;
 $bl-proxima:        "proxima-nova", "Proxima Nova", sans-serif;
@@ -13,18 +14,20 @@ $bl-proxima-extrabold: 800;
 $bl-anonymous-regular: 400;
 $bl-anonymous-bold:    700;
 
+$title-size: 47px;
 
 // Base
 body {
-  background-color:  $bl-light-blue;
+  background-color: $bl-cream;
   font-family: $bl-proxima;
 }
 
 
 // Header
 .bl-header {
-  background-color: $bl-purple;
+  background-color: $bl-red-wine;
   padding: 15px;
+
 }
 
 .bl-logo {
@@ -33,10 +36,54 @@ body {
   font-size: 18px;
   text-align: center;
   font-family: $bl-anonymous-pro;
-  color: lighten($bl-purple, 35%);
+  color: lighten($bl-red-wine, 35%);
 }
 
 // Domains
 .bl-domain-list {
-  background-color: $bl-purple-light;
+  background-color: $bl-purple;
+}
+
+.bl-domain {
+  color: white;
+  padding: 18px 20px;
+  border-bottom: 1px solid lighten($bl-purple, 10%);
+  background-color: $bl-purple;
+
+  &:hover {
+    background-color: $bl-highlight;
+    border-bottom: 1px solid lighten($bl-highlight, 10%);
+    cursor: pointer;
+  }
+}
+
+.bl-domain-name {
+  font-family: $bl-anonymous-pro;
+  margin-right: 10px;
+}
+
+.bl-domain__new input {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  -webkit-appearance: none;
+    font-family: $bl-anonymous-pro;
+color: white;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.bl-domain-registrar {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: lighten($bl-purple, 30%);
+  font-weight: $bl-proxima-bold;
+}
+
+.bl-domain-expiration {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  color: lighten($bl-purple, 30%);
+  margin-top: 8px;
 }
