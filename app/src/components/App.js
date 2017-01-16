@@ -1,7 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
-
 import Header from './Header';
+import Domain from './Domain';
+import AddNew from './AddNew';
 
 class App extends React.Component {
   render() {
@@ -9,11 +9,11 @@ class App extends React.Component {
       <div className="App">
         <Header />
 
-        <div class="bl-domain-list">
-
-          e
+        <div className="bl-domain-list">
+          <Domain />
         </div>
 
+        <AddNew />
       </div>
     );
   }
